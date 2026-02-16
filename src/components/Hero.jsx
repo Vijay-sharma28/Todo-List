@@ -51,7 +51,7 @@ const Hero = ({todos, setTodos}) => {
       <div className="scroll-kit flex flex-col gap-5 px-5 py-10 rounded border lg:h-130 lg:overflow-auto mb-3">
         {todos.length === 0 ? (
           <div className="lg:w-xl h-full flex items-center justify-center text-slate-400 font-semibold text-lg">
-            No pending tasks. Great job! 
+            No pending tasks.. Great job! 
           </div>
         ) : (todos.map((todo, idx) => {
           return <div key={idx} className="card border p-3 lg:w-xl flex items-center justify-between font-semibold rounded">
