@@ -8,7 +8,6 @@ const App = () => {
   const [todos, setTodos] = useState(() => {
     return JSON.parse(localStorage.getItem('Todo')) || []
   })
-
  
 
   useEffect(() => {

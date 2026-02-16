@@ -17,9 +17,9 @@ const Dashboard = ({todos}) => {
         <div className='h-[60%] my-12 py-3'>
             <h1 className='font-bold mb-4 text-xl'>Your Progress</h1>
 
-            <h3 className='text-lg mb-2'>Total : </h3>
-            <h3 className='text-lg mb-2'>Completed : </h3>
-            <h3 className='text-lg mb-2'>Pending : </h3>
+            <h3 className='text-lg mb-2'>Total : {total}</h3>
+            <h3 className='text-lg mb-2'>Completed : {completed}</h3>
+            <h3 className='text-lg mb-2'>Pending : {pending} </h3>
 
             <div className="w-70 bg-gray-200 rounded h-6 overflow-hidden">
                 <div
@@ -35,4 +35,4 @@ const Dashboard = ({todos}) => {
     )
 }
 
-export default Dashboard
+export default Dashboard 

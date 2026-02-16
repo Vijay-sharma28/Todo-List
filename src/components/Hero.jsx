@@ -51,13 +51,13 @@ const Hero = ({todos, setTodos}) => {
       <div className="scroll-kit flex flex-col gap-5 px-5 py-10 rounded border lg:h-130 lg:overflow-auto mb-3">
         {todos.length === 0 ? (
           <div className="lg:w-xl h-full flex items-center justify-center text-slate-400 font-semibold text-lg">
-      No Todos Yet 
-    </div>
+            No pending tasks. Great job! 
+          </div>
         ) : (todos.map((todo, idx) => {
           return <div key={idx} className="card border p-3 lg:w-xl flex items-center justify-between font-semibold rounded">
             <div className={`lg:w-xl flex ${
             todo.completed ? "line-through text-gray-400" : ""}`} >
-              <input className='mr-5 cursor-pointer scale-200 accent-indigo-500' checked={todo.completed} onChange={() => completedTodo(todo.id)} type="checkbox" name="" id="" /> {idx + 1}{")"} {todo.text} 
+              <input className='mr-5 cursor-pointer scale-200 accent-indigo-500 ' checked={todo.completed} onChange={() => completedTodo(todo.id)} type="checkbox" name="" id="" /> {idx + 1}{")"} {todo.text} 
             </div>
             <DeleteTodoBtn dltTodo={dltTodo} idx={idx} />
           </div>
@@ -68,6 +68,7 @@ const Hero = ({todos, setTodos}) => {
     </div>
   )
 }
+
 
 export default Hero
 
